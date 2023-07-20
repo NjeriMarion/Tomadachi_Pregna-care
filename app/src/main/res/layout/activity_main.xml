@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivmomone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/splashpage" />
+
+    <TextView
+        android:id="@+id/tvhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:fontFamily="cursive"
+        android:text="Tomadachi health"
+        android:textColor="#090808"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="@+id/ivmomone"
+        app:layout_constraintTop_toTopOf="@+id/ivmomone" />
+
+    <TextView
+        android:id="@+id/tvhometwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="serif"
+        android:text="For all your medical pregancy solutions"
+        android:textColor="#1B0E55"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvhome"
+        app:layout_constraintStart_toStartOf="@+id/tvhome"
+        app:layout_constraintTop_toBottomOf="@+id/tvhome" />
+
+    <Button
+        android:id="@+id/btnproceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="386dp"
+        android:text="LogIn"
+        android:backgroundTint="@color/darkgrey"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/tvhometwo"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="@+id/tvhometwo"
+        app:layout_constraintTop_toBottomOf="@+id/tvhometwo" />
+
+    <TextView
+        android:id="@+id/tvsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Don't have an account ? Sign-up here"
+        android:textColor="#6772E3"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnproceed"
+        app:layout_constraintStart_toStartOf="@+id/btnproceed"
+        app:layout_constraintTop_toBottomOf="@+id/btnproceed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

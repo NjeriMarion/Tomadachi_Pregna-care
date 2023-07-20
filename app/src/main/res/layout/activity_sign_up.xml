@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUp">
+
+    <TextView
+        android:id="@+id/tvnamesignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="195dp"
+        android:fontFamily="cursive"
+        android:text="Tomadachi health"
+        android:textColor="#1A5A77"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvnamesignup"
+        app:srcCompat="@drawable/logandsign" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilfirstname"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etfirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tillastname"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilfirstname"
+        app:layout_constraintStart_toStartOf="@+id/tilfirstname"
+        app:layout_constraintTop_toBottomOf="@+id/tilfirstname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etlastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilemail"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/tillastname"
+        app:layout_constraintStart_toStartOf="@+id/tillastname"
+        app:layout_constraintTop_toBottomOf="@+id/tillastname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail address" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilpassword"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilemail"
+        app:layout_constraintStart_toStartOf="@+id/tilemail"
+        app:layout_constraintTop_toBottomOf="@+id/tilemail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilpasswordcon"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilpassword"
+        app:layout_constraintStart_toStartOf="@+id/tilpassword"
+        app:layout_constraintTop_toBottomOf="@+id/tilpassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etpasswordcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Sign up"
+        android:textSize="24sp"
+        app:iconSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilpasswordcon"
+        app:layout_constraintStart_toStartOf="@+id/tilpasswordcon"
+        app:layout_constraintTop_toBottomOf="@+id/tilpasswordcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

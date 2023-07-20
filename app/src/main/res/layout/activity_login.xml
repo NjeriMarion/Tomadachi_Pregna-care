@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/tvnamelogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="197dp"
+        android:fontFamily="cursive"
+        android:text="Tomadachi health"
+        android:textColor="#1A5A77"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvnamelogin"
+        app:srcCompat="@drawable/logandsign" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilemailog"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etemaillog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" E-mail address" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilpass"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilemailog"
+        app:layout_constraintStart_toStartOf="@+id/tilemailog"
+        app:layout_constraintTop_toBottomOf="@+id/tilemailog">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:text="LogIn"
+        app:layout_constraintEnd_toEndOf="@+id/tilpass"
+        app:layout_constraintStart_toStartOf="@+id/tilpass"
+        app:layout_constraintTop_toBottomOf="@+id/tilpass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

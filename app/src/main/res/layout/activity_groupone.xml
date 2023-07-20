@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".groupone">
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginStart="55dp"
+        android:fontFamily="cursive"
+        android:text="Tomadachi health"
+        android:textColor="#1A5A77"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=" Plans for age group 10-16"
+        android:textColor="#1A5A77"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvname"
+        app:layout_constraintStart_toStartOf="@+id/tvname"
+        app:layout_constraintTop_toBottomOf="@+id/tvname" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvgroup">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meals"
+            tools:layout_editor_absoluteX="-13dp"
+            tools:layout_editor_absoluteY="104dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suppliments"
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="203dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="404dp"
+        android:layout_height="385dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        app:srcCompat="@drawable/logandsign" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip4"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:text="   Afternoon -> PROTEIN MEAL"
+        android:backgroundTint="@color/cyanOne"
+        android:textSize="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/chip1" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip2"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="8dp"
+        android:text="Evening -> LIGHT DINNER AND FRUITS"
+        android:backgroundTint="@color/cyanOne"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/chip4" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip3"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:text="   Morning -> OATMEAL + FRUITS"
+        android:backgroundTint="@color/cyanOne"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip1"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="8dp"
+        android:text="    Mid-day -> POWER PORIDGE "
+        android:backgroundTint="@color/cyanOne"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/chip3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

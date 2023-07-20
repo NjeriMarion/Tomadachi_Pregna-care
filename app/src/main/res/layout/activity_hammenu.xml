@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hammenu">
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="cursive"
+        android:text="Tomadachi health"
+        android:textColor="#1A5A77"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivmenubar"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <ScrollView
+        android:id="@+id/svmenu"
+        android:layout_width="315dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivmenubar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cpgroupa"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="186dp"
+                android:backgroundTint="@color/background"
+                android:text="      HOME"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cpgroupb"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="186dp"
+                android:backgroundTint="@color/background"
+                android:text="      CONTACT US"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cpgroupc"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="186dp"
+                android:backgroundTint="@color/background"
+                android:text="      ABOUT US"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cpgroupd"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="186dp"
+                android:backgroundTint="@color/background"
+                android:text="      PROFILE"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
